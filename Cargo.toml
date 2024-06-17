@@ -1,5 +1,5 @@
 [package]
-name = "content_writer_npm"
+name = "content_writer"
 version = "0.1.0"
 edition = "2021"
 

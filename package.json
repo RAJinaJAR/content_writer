@@ -1,9 +1,9 @@
 {
-  "name": "content_writer_npm",
+  "name": "content_writer",
   "version": "1.0.0",
   "description": "Rust-generated WebAssembly package for content generation",
-  "main": "content_writer_npm.js",
-  "module": "content_writer_npm_bg.wasm",
+  "main": "content_writer.js",
+  "module": "content_writer_bg.wasm",
   "repository": {
     "type": "git",
     "url": "https://github.com/RAJinaJAR/content_writer_npm"
