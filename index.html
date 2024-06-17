@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wasm Example</title>
+  </head>
+  <body>
+    <h1>Wasm Example</h1>
+    <input type="text" id="input-text" placeholder="Enter text for the model" />
+    <button id="generate-button">Generate Content</button>
+    <div id="output"></div>
+
+    <script type="module">
+      import init, { generate_content } from "./pkg/content_writer_npm.js";
+
+      async function run() {
+        await init();
+
+        const inputText = document.getElementById("input-text");
+        const output = document.getElementById("output");
+        const apiKey = "AIzaSyA_-aSEAx3oTjdh_sk4JWZ2bZRqYHPOttw"; // Replace with your actual API key
+
+        window.set_output = function (result) {
+          output.textContent = result;
+        };
+
+        document
+          .getElementById("generate-button")
+          .addEventListener("click", async () => {
+            const userInput = inputText.value;
+            generate_content(apiKey, userInput);
+          });
+      }
+
+      run();
+    </script>
+  </body>
+</html>

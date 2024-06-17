@@ -1,0 +1,18 @@
+{
+  "name": "content_writer_npm",
+  "version": "1.0.0",
+  "description": "Rust-generated WebAssembly package for content generation",
+  "main": "content_writer_npm.js",
+  "module": "content_writer_npm_bg.wasm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RAJinaJAR/content_writer_npm"
+  },
+  "keywords": [
+    "wasm",
+    "rust",
+    "content generation"
+  ],
+  "author": "Raj Dhapse",
+  "license": "MIT"
+}
